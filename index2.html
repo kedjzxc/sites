@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Candidate</title>
+  <link rel = "preload" href="fonts/calibri_bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel = "preload" href="fonts/calibri.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel = "preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel = "preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel = "preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel = "preload" href="fonts/Futura-PT.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo"><img src="img/logo.png" alt="Логотип" class="header__logo-img"></a>
+      <a href="#" class="header__logo-min"><img src="img/logomin.png" alt="Логотип" class="header__logo-img--min"></a>
+      <nav class="header__nav" data-nav>
+        <ul class="header__nav-list">
+          <li class="header__nav-list--item">
+            <a href="#" class="header__nav-list--link">Найти кандидата</a>
+          </li>
+          <li class="header__nav-list--item">
+            <a href="#" class="header__nav-list--link">Попасть в базу</a>
+          </li>
+          <li class="header__nav-list--item">
+            <a href="#" class="header__nav-list--link">О сервисе</a>
+          </li>
+          <li class="header__nav-list--item">
+            <a href="#" class="header__nav-list--link">Портал</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__searchbar">
+        <input type="text" class="header__searchbar-text" placeholder="Поиск">
+      </div>
+      <ul class="header__acc">
+        <li class="header__acc-item">
+          <p class="haeader__acc-text">Иннокентий</p>
+        </li>
+        <li class="header__acc-item" id="menu__item">
+          <button type="button" class="header__acc-round" id="dropdown__btn">И</button>
+          <div class="dropdown" id="dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Посмотреть профиль</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Выйти</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="sidebar">
+  <div class="container sidebar__container">
+    <div class="sidebar__inner">
+      <div class="sidebar__inner-left">
+        <div class="sidebar__profile sidebar__profile-del">
+          <picture class="sidebar__profile-img">
+            <source srcset="img/Avatarsidebar.avif" type="image/avif">
+            <source srcset="img/Avatarsidebar.webp" type="image/webp">
+            <img loading="lazy" src="img/Avatarsidebar.jpg" class="image" width="64" height="64" alt="">
+          </picture>
+          <div class="sidebar__profile-text">
+            <h3 class="sidebar__profile-title">Андрей Чухлебов</h3>
+            <p class="sidebar__profile-age">31 год</p>
+            <p class="sidebar__profile-job">Интернет-маркетолог</p>
+            <p class="sidebar__profile-location">Пхукет</p>
+            <p class="sidebar__profile-past">Рассматривался на вакансию интернет-маркетолог.
+              Зарплатные ожидания: 000</p>
+            <div class="sidebar__profile-under">
+              <div class="sidebar__profile-tel">+7 (918) …-.-.</div>
+              <button class="btn sidebar__left-btn">Открыть контакты</button>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar__accordeon">
+          <div class="sidebar__reason">
+            <button class="sidebar__acc-btn" id="sidebar__acc-btn1">Причина поиска работы</button>
+            <div class="sidebar__acc" id="sidebar__acc1">
+              <h3 class="sidebar__reason-title" id="sidebar__acc-title">Причина поиска работы</h3>
+              <p class="sidebar__reason-subtitle">Почти полтора года, до мая 2022, кандидат работал в Альфа Банке
+                ведущим специалистом по автотестированию (аутстаф от вендора). В январе получил предложение от друзей пожить пару месяцев на Пхукете (до этого он практически не уходил даже в отпуск), договорился с работодателем о возможности удалённой работы, однако уже по факту переезда такой формат в банке не одобрили, вендор не может предложить другой хороший проект, и Андрей был вынужден уволиться. Сейчас находится на Пхукете, но там его ничто не удерживает, потому рассматривает любые предложения.</p>
+            </div>
+          </div>
+          <div class="sidebar__info">
+            <button class="sidebar__acc-btn" id="sidebar__acc-btn2">Общая информация, почему именно этот
+              кандидат</button>
+            <div class="sidebar__acc" id="sidebar__acc2">
+              <h3 class="sidebar__info-title" id="sidebar__acc-title2">Общая информация, почему именно этот кандидат</h3>
+              <p class="sidebar__info-subtitle">В сфере IT Андрей работает всю карьеру, начинал с администратора баз
+                данных
+                и Oracle-разработчика, но последние 6 лет занимается тестированием. Имеет техническое образование —
+                прикладная информатика в экономике. В Альфа Банке работал
+                в продуктовой команде, был единственным тестировщиком, потому нёс ответственность за качество продукта,
+                за
+                процессы тестирования внутри команды и т. д. Занимался
+                и ручным тестированием…</p>
+              <a href="#" class="sidebar__info-link">Читать далее</a>
+            </div>
+          </div>
+          <div class="sidebar__info">
+            <button class="sidebar__acc-btn" id="sidebar__acc-btn3">Опыт в тестировании</button>
+            <div class="sidebar__acc" id="sidebar__acc3">
+              <h3 class="sidebar__info-title" id="sidebar__acc-title3">Опыт в тестировании</h3>
+              <p class="sidebar__info-subtitle">Виды используемых автотестов</p>
+              <ul class="sidebar__list">
+                <li class="sidebar__list-item">-2 года писал end-2-end на аналоге selenide</li>
+                <li class="sidebar__list-item">-1,5 года писал end-2-end на bdd фреймворке Akita (3 слоя в проекте:
+                  корневая
+                  либа акиты, либа с кастомными шагами, фича-файлы с тестами)…</li>
+              </ul>
+              <a href="#" class="sidebar__info-link">Читать далее</a>
+            </div>
+          </div>
+          <div class="sidebar__info">
+            <button class="sidebar__acc-btn" id="sidebar__acc-btn4">Опыт работы с API и тестирования бэкенда</button>
+            <div class="sidebar__acc" id="sidebar__acc4">
+              <h3 class="sidebar__info-title" id="sidebar__acc-title4">Опыт работы с API и тестирования бэкенда</h3>
+              <p class="sidebar__info-subtitle">REST API начал тестировать руками в Infowatch.
+                На протяжении 2 лет в hh.ru также приходилось тестировать Rest.
+                В Альфа Банке 1 год тестировал руками трифт-апи, 1,5 года — soap и 0,5 года — Rest. Инструменты:
+                Postman,
+                SoapUI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar__inner-right">
+        <div class="sidebar__btn-block">
+          <button class="btn sidebar__btn">Посмотреть резюме</button>
+          <button class="btn sidebar__btn sidebar__btn-yellow">Обсудить сотрудничество</button>
+          <button class="btn sidebar__btn">Найти похожего</button>
+        </div>
+        <div class="sidebar__portfolio">
+          <h3 class="sidebar__portfolio-title">Портфолио</h3>
+          <p class="sidebar__portfolio-subtitle">Портфолио Андрея Чухлебова</p>
+        </div>
+        <div class="sidebar__examples">
+          <h3 class="sidebar__examples-title">Примеры</h3>
+          <p class="sidebar__examples-subtitle">Пример юнит-экономики</p>
+          <p class="sidebar__examples-subtitle">Пример отчета</p>
+        </div>
+        <div class="sidebar__contacts">
+          <button class="sidebar__acc-btn" id="sidebar__acc-btn5">Ваши действия</button>
+          <div class="sidebar__acc" id="sidebar__acc5">
+            <div class="sidebar__contacts-block">
+              <h3 class="sidebar__contacts-block--title">Открыто контактов:</h3>
+              <div class="sidebar__contacts-text">
+                <p class="sidebar__contacts-block--subtitle">5/50</p>
+                <p class="sidebar__contacts-block--subtitle">Докупить контакты</p>
+              </div>
+            </div>
+            <div class="sidebar__contacts-block">
+              <h3 class="sidebar__contacts-block--title">Открыто контактов:</h3>
+              <div class="sidebar__contacts-text">
+                <p class="sidebar__contacts-block--subtitle">10/100</p>
+                <p class="sidebar__contacts-block--subtitle sidebar__contacts-block--subtitle-right">Скрыть из
+                  результатов
+                  уже просмотренных
+                  кандидатов</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar__profile sidebar__profile-min">
+        <picture class="sidebar__profile-img">
+          <source srcset="img/Avatarsidebar.avif" type="image/avif">
+          <source srcset="img/Avatarsidebar.webp" type="image/webp">
+          <img loading="lazy" src="img/Avatarsidebar.jpg" class="image" width="64" height="64" alt="">
+        </picture>
+        <div class="sidebar__profile-text sidebar__profile-min--text">
+          <h3 class="sidebar__profile-title sidebar__profile-min--title">Андрей Чухлебов</h3>
+          <p class="sidebar__profile-age sidebar__profile-min--age">31 год</p>
+          <p class="sidebar__profile-job sidebar__profile-min--age">Интернет-маркетолог</p>
+          <p class="sidebar__profile-location sidebar__profile-min--location">Пхукет</p>
+          <p class="sidebar__profile-past sidebar__profile-min--past">Рассматривался на вакансию
+            интернет-маркетолог.
+            Зарплатные ожидания: 000</p>
+          <div class="sidebar__profile-under sidebar__profile-min--under">
+            <div class="sidebar__profile-tel">+7 (918) …-.-.</div>
+            <button class="btn sidebar__left-btn sidebar__profile-min--btn">Открыть контакты</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__row">
+        <h3 class="footer__row-title">ЛИЦА.Кандидаты</h3>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Найти кандидата</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Попасть в базу</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">О сервисе</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__row">
+        <h3 class="footer__row-title">ЛИЦА.Работа</h3>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Рекрутинг</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Конструктор подбора</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Аналитика подбора</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__row">
+        <h3 class="footer__row-title">О портале</h3>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Поддержка</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Обновления</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__under">
+      <p class="footer__under-left">
+        ООО «ЛИЦА»
+      </p>
+      <p class="footer__under-right">
+        Реквизиты | Правовая информация
+      </p>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>

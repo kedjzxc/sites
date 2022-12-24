@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Candidate</title>
+  <link rel = "preload" href="fonts/calibri_bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel = "preload" href="fonts/calibri.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel = "preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel = "preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel = "preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel = "preload" href="fonts/Futura-PT.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="header__logo"><img src="img/logo.png" alt="Логотип" class="header__logo-img"></a>
+      <a href="#" class="header__logo-min"><img src="img/logomin.png" alt="Логотип" class="header__logo-img--min"></a>
+      <nav class="header__nav" data-nav>
+        <ul class="header__nav-list">
+          <li class="header__nav-list--item">
+            <a href="#" class="header__nav-list--link">Найти кандидата</a>
+          </li>
+          <li class="header__nav-list--item">
+            <a href="#" class="header__nav-list--link">Попасть в базу</a>
+          </li>
+          <li class="header__nav-list--item">
+            <a href="#" class="header__nav-list--link">О сервисе</a>
+          </li>
+          <li class="header__nav-list--item">
+            <a href="#" class="header__nav-list--link">Портал</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__searchbar">
+        <input type="text" class="header__searchbar-text" placeholder="Поиск">
+      </div>
+      <ul class="header__acc">
+        <li class="header__acc-item">
+          <p class="haeader__acc-text">Иннокентий</p>
+        </li>
+        <li class="header__acc-item" id="menu__item">
+          <button type="button" class="header__acc-round" id="dropdown__btn">И</button>
+          <div class="dropdown" id="dropdown">
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Посмотреть профиль</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Выйти</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <nav class="hero__nav">
+        <ul class="hero__nav-list">
+          <li class="hero__nav-item">
+            <a href="#" class="hero__nav-link">Маркетологи</a>
+          </li>
+          <li class="hero__nav-item">
+            <a href="#" class="hero__nav-link">Backend-разработчики</a>
+          </li>
+          <li class="hero__nav-item">
+            <a href="#" class="hero__nav-link">Дизайнеры</a>
+          </li>
+          <li class="hero__nav-item">
+            <a href="#" class="hero__nav-link">Менеджеры по продажам</a>
+          </li>
+          <li class="hero__nav-item" id="hero__menu">
+            <a href="#" class="hero__nav-link hero__nav-more" id="open__hero-dropdown">Еще</a>
+            <div class="hero__dropdown">
+              <ul class="hero__dropdown-list" id="hero__dropdown">
+                <li class="hero__dropdown-item">
+                  <a href="#" class="hero__dropdown-link">Пункт 1</a>
+                </li>
+                <li class="hero__dropdown-item">
+                  <a href="#" class="hero__dropdown-link">Пукнт 2</a>
+                </li>
+                <li class="hero__dropdown-item">
+                  <a href="#" class="hero__dropdown-link">Пукнт 3</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero__block">
+        <div class="hero__block-text">
+          <div class="hero__block-title--block">
+            <h1 class="hero__block-title">Нанимайте проверенных</h1>
+            <span>кандидатов</span>
+          </div>
+          <p class="hero__block-subtitle">Мы уже со всеми провели собеседования и подтверждаем их профессионализм</p>
+          <div class="hero__buttons">
+            <button type="button" class="btn hero__button-1" id="open__hero-popup">Выбрать кандидата</button>
+            <button type="button" class="btn hero__button-2" id="open__hero-popup1">Попасть в базу</button>
+          </div>
+          <div class="hero__popup" id="hero__popup">
+            <div class="hero__popup-container">
+              <div class="hero__popup-body" id="hero__popup-body">
+                <picture class="hero__popup-img">
+                  <source srcset="img/logo.avif" type="image/avif">
+                  <source srcset="img/logo.webp" type="image/webp">
+                  <img loading="lazy" src="img/logo.png" class="image" width="178" height="72" alt="">
+                </picture>
+                <p class="hero__popup-text">Получить доступ к базе проверенных кандидатов
+                </p>
+                <form action="#" method="post" class="hero__popup-form">
+                  <label for="email" class="hero__popup-label">Email</label>
+                  <input type="email" name="email" class="hero__popup-input" required>
+                  <label for="password" class="hero__popup-label">Пароль</label>
+                  <input type="password" name="password" class="hero__popup-input" required>
+                </form>
+                <div class="hero__popup-buttons">
+                  <button class="btn hero__popup-sign--in">Войти</button>
+                  <button class="btn hero__popup-log--in">Зарегистрироваться</button>
+                </div>
+                <div class="hero__popup-close" id="hero__popup-close">✖</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__block-img">
+          <picture>
+            <source srcset="img/hero.avif" type="image/avif">
+            <source srcset="img/hero.webp" type="image/webp">
+            <img loading="lazy" src="img/hero.png" class="image" width="520" height="398" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="branch">
+  <div class="container">
+    <h2 class="branch__title">Выберите направление работы</h2>
+    <div class="swiper swiper__custom">
+      <div class="branch__inner swiper-wrapper" id="swiper-wrapper">
+        <a href="#" class="branch__item-link swiper-slide">
+          <div class="branch__item">
+            <picture class="branch__item-img">
+              <source srcset="img/Marketing.avif" type="image/avif">
+              <source srcset="img/Marketing.webp" type="image/webp">
+              <img loading="lazy" src="img/Marketing.png" class="image" width="44" height="44" alt="">
+            </picture>
+            <p class="branch__item-text">Маркетинг</p>
+            <div class="branch__round">
+              <p class="branch__round-text">40+</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="branch__item-link swiper-slide">
+          <div class="branch__item">
+            <picture class="branch__item-img">
+              <source srcset="img/Terminal.avif" type="image/avif">
+              <source srcset="img/Terminal.webp" type="image/webp">
+              <img loading="lazy" src="img/Terminal.png" class="image" width="44" height="44" alt="">
+            </picture>
+            <p class="branch__item-text">Разработка</p>
+            <div class="branch__round">
+              <p class="branch__round-text">80+</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="branch__item-link swiper-slide">
+          <div class="branch__item">
+            <picture class="branch__item-img">
+              <source srcset="img/Chart square bar.avif" type="image/avif">
+              <source srcset="img/Chart square bar.webp" type="image/webp">
+              <img loading="lazy" src="img/Chart square bar.png" class="image" width="44" height="44" alt="">
+            </picture>
+            <p class="branch__item-text">Аналитика</p>
+          </div>
+        </a>
+        <a href="#" class="branch__item-link swiper-slide">
+          <div class="branch__item">
+            <picture class="branch__item-img">
+              <source srcset="img/User group.avif" type="image/avif">
+              <source srcset="img/User group.webp" type="image/webp">
+              <img loading="lazy" src="img/User group.png" class="image" width="44" height="44" alt="">
+            </picture>
+            <p class="branch__item-text">Комньюнити</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="swiper swiper__custom-sec">
+      <div class="branch__inner swiper-wrapper">
+        <a href="#" class="branch__item-link swiper-slide">
+          <div class="branch__item">
+            <picture class="branch__item-img">
+              <source srcset="img/Design.avif" type="image/avif">
+              <source srcset="img/Design.webp" type="image/webp">
+              <img loading="lazy" src="img/Design.png" class="image" width="44" height="44" alt="">
+            </picture>
+            <p class="branch__item-text">Дизайн</p>
+          </div>
+        </a>
+        <a href="#" class="branch__item-link swiper-slide">
+          <div class="branch__item">
+            <picture class="branch__item-img">
+              <source srcset="img/Trending up.avif" type="image/avif">
+              <source srcset="img/Trending up.webp" type="image/webp">
+              <img loading="lazy" src="img/Trending up.png" class="image" width="44" height="44" alt="">
+            </picture>
+            <p class="branch__item-text">Продажи</p>
+          </div>
+        </a>
+        <a href="#" class="branch__item-link swiper-slide">
+          <div class="branch__item">
+            <picture class="branch__item-img">
+              <source srcset="img/Annotation.avif" type="image/avif">
+              <source srcset="img/Annotation.webp" type="image/webp">
+              <img loading="lazy" src="img/Annotation.png" class="image" width="44" height="44" alt="">
+            </picture>
+            <p class="branch__item-text">Контент</p>
+          </div>
+        </a>
+        <a href="#" class="branch__item-link swiper-slide">
+          <div class="branch__item">
+            <picture class="branch__item-img">
+              <source srcset="img/Star.avif" type="image/avif">
+              <source srcset="img/Star.webp" type="image/webp">
+              <img loading="lazy" src="img/Star.png" class="image" width="44" height="44" alt="">
+            </picture>
+            <p class="branch__item-text">Топ-менеджмент</p>
+          </div>
+        </a>
+      </div>
+    </div>
+</section>
+
+      <section class="features">
+  <div class="container">
+    <div class="features__inner">
+      <div class="features__left">
+        <div class="features__left-inner">
+          <div class="features__left-item">
+            <h2 class="features__left-title">Почему работодатели выбирают ЛИЦА?</h2>
+            <div class="features__left-subtitle">
+              <picture>
+                <source srcset="img/checkbox.avif" type="image/avif">
+                <source srcset="img/checkbox.webp" type="image/webp">
+                <img loading="lazy" src="img/checkbox.png" class="image" width="40" height="40" alt="">
+              </picture>
+              <h3 class="features__left-subtitle--text">Проверка компетенций</h3>
+            </div>
+            <p class="features__left-text">Всех кандидатов с нашей стороны собеседуют не рекрутера, а эксперты в своих
+              областях.
+              По результаты мы составляем справку
+              о кандидате, чтобы вы могли узнать его лучше.</p>
+          </div>
+          <div class="features__left-item">
+            <div class="features__left-subtitle">
+              <picture>
+                <source srcset="img/checkbox.avif" type="image/avif">
+                <source srcset="img/checkbox.webp" type="image/webp">
+                <img loading="lazy" src="img/checkbox.png" class="image" width="40" height="40" alt="">
+              </picture>
+              <h3 class="features__left-subtitle--text">Сотни кандидатов по подписке</h3>
+            </div>
+            <p class="features__left-text">Вы сможете самостоятельно связываться
+              с кандидатами — все они дали согласие на это.</p>
+          </div>
+          <div class="features__left-item">
+            <div class="features__left-subtitle">
+              <picture>
+                <source srcset="img/checkbox.avif" type="image/avif">
+                <source srcset="img/checkbox.webp" type="image/webp">
+                <img loading="lazy" src="img/checkbox.png" class="image" width="40" height="40" alt="">
+              </picture>
+              <h3 class="features__left-subtitle--text">Еженедельное обновление базы</h3>
+            </div>
+            <p class="features__left-text">В рамках сервиса ЛИЦА.Работа мы проводим
+              по несколько десятков собеседований еженедельно, и пополняем базу новыми справками по лучшим кандидатам.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="features__right">
+        <h2 class="features__right-title">Кандидаты по подписке</h2>
+        <div class="features__right-inner">
+          <h2 class="features__right-price">4900 ₽ в месяц</h2>
+          <p class="features__right-text">В 10-100 раз ниже стоимости любого подбора</p>
+          <button type="button" class="btn features__btn">Выбор кандидата</button>
+        </div>
+        <span class="features__number">4900</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="database">
+  <div class="container">
+    <h2 class="database__title">Как выглядит база кандидатов</h2>
+    <div class="swiper swiper__custom-third">
+      <div class="swiper-wrapper database__inner">
+        <div class="swiper-slide database__item">
+            <div class="database__time">
+              <div class="database__item--part-time">part-time</div>
+              <div class="database__item--full-time">full-time</div>
+            </div>
+            <picture class="database__img">
+              <source srcset="img/avatar1.avif" type="image/avif">
+              <source srcset="img/avatar1.webp" type="image/webp">
+              <img loading="lazy" src="img/avatar1.jpg" class="image" width="104" height="104" alt="">
+            </picture>
+            <p class="database__item-name">Анциферов Владимир</p>
+            <p class="database__item-job">Директор по маркетингу</p>
+            <p class="database__item-exp">Опыт: более 13 лет</p>
+            <p class="database__item-salary">Зарплата: 200 тыс. ₽</p>
+            <a href="index2.html" class="database__btn-link"><button type="button" class="btn database__btn">Посмотреть справку</button></a>
+        </div>
+        <div class="swiper-slide database__item">
+          <div class="database__time">
+            <div class="database__item--full-time">full-time</div>
+          </div>
+          <picture class="database__img">
+            <source srcset="img/avatar2.avif" type="image/avif">
+            <source srcset="img/avatar2.webp" type="image/webp">
+            <img loading="lazy" src="img/avatar2.jpg" class="image" width="104" height="104" alt="">
+          </picture>
+          <p class="database__item-name">Сикорская Анна</p>
+          <p class="database__item-job">Аналитик</p>
+          <p class="database__item-exp">Опыт: более 13 лет</p>
+          <p class="database__item-salary">Зарплата: от 150 тыс. ₽</p>
+          <button type="button" class="btn database__btn">Посмотреть справку</button>
+        </div>
+        <div class="swiper-slide database__item">
+          <div class="database__time">
+            <div class="database__item--part-time">part-time</div>
+            <div class="database__item--full-time">full-time</div>
+          </div>
+          <picture class="database__img">
+            <source srcset="img/avatar3.avif" type="image/avif">
+            <source srcset="img/avatar3.webp" type="image/webp">
+            <img loading="lazy" src="img/avatar3.jpg" class="image" width="104" height="104" alt="">
+          </picture>
+          <p class="database__item-name">Демидова Дарья</p>
+          <p class="database__item-job">Брендмейкер</p>
+          <p class="database__item-exp">Опыт: более 10 лет</p>
+          <p class="database__item-salary">Зарплата: от 100 тыс. ₽</p>
+          <button type="button" class="btn database__btn">Посмотреть справку</button>
+        </div>
+        <div class="swiper-slide database__item">
+          <div class="database__time">
+            <div class="database__item--full-time">full-time</div>
+          </div>
+          <picture class="database__img">
+            <source srcset="img/avatar4.avif" type="image/avif">
+            <source srcset="img/avatar4.webp" type="image/webp">
+            <img loading="lazy" src="img/avatar4.jpg" class="image" width="104" height="104" alt="">
+          </picture>
+          <p class="database__item-name">Харисов Евгений</p>
+          <p class="database__item-job">Директор по развитию бизнеса</p>
+          <p class="database__item-exp">Опыт: более 20 лет</p>
+          <p class="database__item-salary">Зарплата: от 150 тыс. ₽</p>
+          <button type="button" class="btn database__btn">Посмотреть справку</button>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="form">
+  <div class="container">
+    <div class="form__inner">
+      <picture>
+        <source srcset="img/form.avif" type="image/avif">
+        <source srcset="img/form.webp" type="image/webp">
+        <img loading="lazy" src="img/form.png" class="image" width="553" height="536" alt="">
+      </picture>
+      <div class="form__block">
+        <h3 class="form__block-title">Подписаться на обновления базы</h3>
+        <p class="form__block-subtitle">Мы будет присылать вам информацию каждую неделю,
+          по каким сферам у нас появились кандидаты.</p>
+        <form action="#" class="form__block-form">
+          <label class="form__block-label">
+            <input type="text" name="Имя" class="input-reset form__block-form-input" placeholder="Имя">
+          </label>
+          <label class="form__block-label">
+            <input type="email" name="Имя" class="input-reset form__block-form-input" placeholder="Email">
+          </label>
+          <label class="form__block-label">
+            <input type="tel" name="Имя" class="input-reset form__block-form-input" placeholder="Номер телефона">
+          </label>
+          <div class="form__btn-block">
+            <button type="button" class="btn form__btn" id="open__popup">Подписаться</button>
+          </div>
+          <div class="popup" id="popup">
+            <div class="popup__container">
+              <div class="popup__body" id="popup__body">
+                <picture class="popup__img">
+                  <source srcset="img/logo.avif" type="image/avif">
+                  <source srcset="img/logo.webp" type="image/webp">
+                  <img loading="lazy" src="img/logo.png" class="image" width="" height="" alt="">
+                </picture>
+                <p class="popup__text">Спасибо! Вы подписались
+                  на еженедельные обновления базы проверенных кандидатов.
+                </p>
+                <button type="button" class="btn popup__btn" id="popup__close">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="form__under">
+          <p class="form__under-text">Отправка данной формы означает согласие с <span>Пользовательским
+              соглашением</span> и <span>Политикой конфиденциальности</span></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__row">
+        <h3 class="footer__row-title">ЛИЦА.Кандидаты</h3>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Найти кандидата</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Попасть в базу</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">О сервисе</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__row">
+        <h3 class="footer__row-title">ЛИЦА.Работа</h3>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Рекрутинг</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Конструктор подбора</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Аналитика подбора</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__row">
+        <h3 class="footer__row-title">О портале</h3>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Поддержка</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Обновления</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__under">
+      <p class="footer__under-left">
+        ООО «ЛИЦА»
+      </p>
+      <p class="footer__under-right">
+        Реквизиты | Правовая информация
+      </p>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
